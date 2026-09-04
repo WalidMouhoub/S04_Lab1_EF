@@ -6,9 +6,9 @@ namespace ZombieParty.Controllers
 {
     public class ZombieTypeController : Controller
     {
-        private BaseDonnees _baseDonnees { get; set; }
+        private ZombiePartyDbContext _baseDonnees { get; set; }
 
-        public ZombieTypeController(BaseDonnees baseDonnees)
+        public ZombieTypeController(ZombiePartyDbContext baseDonnees)
         {
             _baseDonnees = baseDonnees;
         }
