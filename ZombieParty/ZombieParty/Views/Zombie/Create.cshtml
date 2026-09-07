@@ -35,7 +35,7 @@
                     <div class="col-8">
                         <select asp-for="@Model.Zombie.ZombieTypeId" asp-items="@Model.ZombieTypeSelectList"  
                                                 class="form-control form-select">
-                            
+                            <option disabled selected>--Select Zombie Type--</option>
                         </select>
                         <span asp-validation-for="@Model.Zombie.ZombieTypeId" class="text-danger"></span>
                     </div>
