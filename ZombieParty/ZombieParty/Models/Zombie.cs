@@ -17,7 +17,7 @@ namespace ZombieParty.Models
         public int ZombieTypeId { get; set; }
 
         [ValidateNever]
-        public ZombieType ZombieType { get; set; }
+        public ZombieType? ZombieType { get; set; }
 
         [Range(1,20)]
         public int Point { get; set; }
